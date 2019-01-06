@@ -1,0 +1,1360 @@
+
+<html lang="az">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Main Page</title>
+        <!--<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+        <link rel="stylesheet" href="./assets/css/build.min.css">
+        <link rel="stylesheet" href="./assets/css/azcargo.css">
+        <style>
+            html, body {
+                font-family: 'Roboto', sans-serif;
+                /*font-size: 48px;*/
+            }
+        </style>
+
+    </head>
+
+    <body style="overflow-x: hidden">
+
+        <div id="app">
+
+            <div class="MainContent--flex">
+                <!-- Header -->
+                <header id="Header" class="Header--height position-absolute z-index-2 w-100">
+
+                    <div class="Header__content  h-100p w-100">
+
+                        <div class="container h-100">
+                            <div class="row align-items-center h-100">
+                                <div class="col-md-2 HeaderLeft--col logo-1">
+                                    <!--<img src="assets/img/icons/svgs/azcargo-logo.png?v=1"  alt="movex" class="w-100 Max-logo-w" style="float: left"/>-->
+                                    <img src="assets/img/icons/svgs/azcargo-logo.png?v=1"  alt="movex" class="w-100" />
+                                    <!--<img src="assets/img/icons/svgs/azcargo-logo.png?v=1"  alt="movex" class="w-100 Max-logo-w" />-->
+                                    <!--<img src="assets/img/icons/svgs/mainLogo.svg?v=1"  alt="movex" class="w-100 Max-logo-w" />-->
+                                </div>
+                                <div class="col-md-2 HeaderLeft--col other-logo">
+                                    <!--<img src="assets/img/icons/svgs/azcargo-logo.png?v=1"  alt="movex" class="w-100 Max-logo-w" style="float: left"/>-->
+                                    <img src="assets/img/icons/svgs/azcargo-call1.png?v=1"  alt="movex" class="w-100" />
+                                    <!--<img src="assets/img/icons/svgs/azcargo-call1.png?v=1"  alt="movex" class="w-100 Max-logo-w" />-->
+                                    <!--<img src="assets/img/icons/svgs/mainLogo.svg?v=1"  alt="movex" class="w-100 Max-logo-w" />-->
+                                </div>
+                                <div class="col-md-8 HeaderRight--col h-100 py-15">
+                                    <div class="HeaderRight h-100">
+                                        <div class="HeaderRightTop">
+                                            <!-- HeaderRightTop -->
+
+
+                                            <ul class="list-s-none d-flex align-items-center p-0 justify-content-end mb-15 main-lang">
+
+                                                <li class="pl-15">
+                                                    <select class="lang font-mp-bold">
+                                                        <option>AZ</option>
+                                                        <option>EN</option>
+                                                        <option>RU</option>
+                                                    </select>
+                                                </li>
+<!--                                                <li class="pl-15 menu-img">
+                                                    Button 
+                                                    <img src="assets/img/icons/svgs/vector.svg?v=1"  alt="movex" class="w-100" />
+
+                                                    Button     
+                                                </li>-->
+
+                                            </ul>
+
+
+                                            <ul class="list-s-none d-flex align-items-center p-0 justify-content-end mb-15 menu-item">
+
+                                                <li class="pl-15">
+                                                    <!--<a href="#" class="d-block" >-->
+                                                    <span class="font-mp-bold font-12 d-block do-order" data-type="hide">Sifariş et</span>
+                                                    <div class="dialog" id="order-modal">
+                                                        <form>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Ad
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Soyad
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Telefon
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Email
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Sifariş tipi
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Ödəniş tipi
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Haradan
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Hara
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Qeyd
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <textarea type="text" id="name"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Şəkil
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="file" id="name">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div align="center">
+                                                                <input type="button" value="Ok" id="btnOK">
+                                                            </div>
+                                                            <div align="center">
+                                                                <input type="button" value="Bağla" id="btnCancel">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <!--</a>-->
+                                                </li>
+                                                <li class="pl-15">
+                                                    <img src="assets/img/icons/svgs/line.svg?v=1"  alt="movex" class="w-100" />
+                                                </li>
+                                                <li class="pl-15">
+                                                    <!--<a href="/" class="d-block">-->
+                                                    <span class="font-mp-bold font-12 d-block do-payment" data-type="hide">Ödəniş et</span>
+                                                    <div class="dialog" id="payment-modal">
+                                                        <form>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Sifariş nömrəsi
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Sifariş məbləği
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Nömrə
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Email
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Kartın növü
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div align="center">
+                                                                <input type="button" value="Ok" id="btnPaymentOK">
+                                                            </div>
+                                                            <div align="center">
+                                                                <input type="button" value="Bağla" id="btnPaymentCancel">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <!--</a>-->
+                                                </li>
+                                                <li class="pl-15">
+                                                    <img src="assets/img/icons/svgs/line.svg?v=1"  alt="movex" class="w-100" />
+                                                </li>
+                                                <li class="pl-15">
+                                                    <!--<a href="/" class="d-block">-->
+                                                    <span class="font-mp-bold font-12 d-block do-login" data-type="hide">Daxil ol</span>
+                                                    <div class="dialog" id="login-modal" >
+                                                        <form>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Username
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Password
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="password" id="name">
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div align="left">
+                                                                <input type="button" value="Qeydiyyat" id="btnLoginRegister">
+                                                            </div>
+                                                            <div align="left">
+                                                                <a href="/" class="d-block underline-none text-green-hover" id="btnForgetpassword">
+                                                                        <i class="text-white font-mp-bold font-12">Şifrəni unutmusan?</i>
+                                                                    </a>
+                                                            </div>
+                                                            <div align="center">
+                                                                <input type="button" value="Ok" id="btnLoginOK">
+                                                            </div>
+                                                            <div align="center">
+                                                                <input type="button" value="Bağla" id="btnLoginCancel">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <!--</a>-->
+                                                </li>
+
+                                            </ul>
+
+
+                                            <!-- /HeaderRightTop -->                        </div>
+
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-12 HeaderRight--col h-100 py-15">
+                                    <div class="HeaderRight h-100">
+                                        <div class="HeaderRightTop">
+                                            <ul class="list-s-none d-flex  p-0" style="position: absolute; margin-left: 44%;">
+
+                                        <li>
+                                            <a href="/" class="d-block underline-none text-green-hover">
+                                                <span class="text-white font-mp-bold font-12">HAQQIMIZDA</span>
+                                            </a>
+                                        </li>
+                                        <li class="pl-15">
+                                            <a href="/" class="d-block underline-none text-green-hover">
+                                                <span class="text-white font-mp-bold font-12">XİDMƏTLƏRİMİZ</span>
+                                            </a>
+                                        </li>
+                                        <li class="pl-15">
+                                            <a href="/" class="d-block underline-none text-green-hover">
+                                                <span class="text-white font-mp-bold font-12">NAİLİYYƏTLƏRİMİZ</span>
+                                            </a>
+                                        </li>
+                                        <li class="pl-15">
+                                            <a href="/" class="d-block underline-none text-green-hover">
+                                                <span class="text-white font-mp-bold font-12">KAMPANİYALAR</span>
+                                            </a>
+                                        </li>
+                                        <li class="pl-15">
+                                            <a href="/" class="d-block underline-none text-green-hover">
+                                                <span class="text-white font-mp-bold font-12">KORPORATİV TƏKLİF</span>
+                                            </a>
+                                        </li>
+                                        <li class="pl-15">
+                                            <a href="/" class="d-block underline-none text-green-hover">
+                                                <span class="text-white font-mp-bold font-12">KARYERA</span>
+                                            </a>
+                                        </li>
+                                        <li class="pl-15">
+                                            <a href="/" class="d-block underline-none text-green-hover">
+                                                <span class="text-white font-mp-bold font-12" style="margin-right: 100px">ƏLAQƏ</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </header>
+
+                <!-- /Header -->
+                <main id="MainPage" class="ChildContent--flex ">
+                    
+                   
+                    <!--                    <div class="row menu-div hide-div" data-type="hide">
+                                            <div class="HeaderRightBtm">
+                                            <div class="text-white top-span a"><span>Haqqımızda</span></div>
+                                            <div class="text-white top-span a"><span>Xidmətlərimiz</span></div>
+                                            <div class="text-white top-span a"><span>Naliyyetlerimiz</span></div>
+                                            <div class="text-white top-span a"><span>Kampaniyalar</span></div>
+                                            <div class="text-white top-span a"><span>Sosial fəaliyyətimiz</span></div>
+                                            <div class="text-white top-span a"><span>Korprativ təklif</span></div>
+                                            <div class="text-white top-span a"><span>Karyera</span></div>
+                                            <div class="text-white top-span a"><span>Əlaqə</span></div>
+                    
+                                            </div>
+                                        </div>-->
+                    <!-- MAIN PAGE  -->
+
+                    <!--MainBanner-->
+
+                    <div id="MainBanner">
+
+                        <!--Banner Slider -->
+
+                        <div id="MainBannerSlider" class="owl-carousel owl-theme h-100">
+
+                            <div class="item w-100 h-100">
+                                <div class="Banner--img h-100 w-100" style="background-image: url('assets/img/content/banners/mainBanner.png?cache=Rfx')">
+                                    <div class="container d-flex align-items-center w-100 h-100">
+                                        <div class="">
+                                            <h2 class="font-60 font-mp-bold text-white mb-0">XİDMƏTİN YENİ ADI</h2>
+                                            <div class="mb-2"></div>
+                                            <p class="font-18 font-mp text-white mb-0">
+                                                Bu ildən etibarən Movex adı ilə tam yeni <br> keyfiyyət və xidmətlərlə qarşınızdayıq!
+                                            </p>
+                                            <div class="pt-25"></div>
+                                            <!--Button -->
+                                            <button 
+                                                type="button"
+                                                class="btn btn-outline-gray py-10 px-25 h-45"
+
+                                                >
+                                                <span class=" font-mp-bold  text-white font-12  ">
+                                                    ƏTRAFLI
+                                                </span>
+                                            </button>
+
+                                            <!--Button -->                </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="item w-100 h-100">
+                                <div class="Banner--img h-100 w-100" style="background-image: url('assets/img/content/banners/mainBanner.png?cache=Rfx')">
+                                    <div class="container d-flex align-items-center w-100 h-100">
+                                        <div class="">
+                                            <h2 class="font-60 font-mp-bold text-white mb-0">XİDMƏTİN YENİ ADI</h2>
+                                            <div class="mb-2"></div>
+                                            <p class="font-18 font-mp text-white mb-0">
+                                                Bu ildən etibarən Movex adı ilə tam yeni <br> keyfiyyət və xidmətlərlə qarşınızdayıq!
+                                            </p>
+                                            <div class="pt-25"></div>
+                                            <!--Button -->
+                                            <button 
+                                                type="button"
+                                                class="btn btn-outline-gray py-10 px-25 h-45"
+
+                                                >
+                                                <span class=" font-mp-bold  text-white font-12  ">
+                                                    ƏTRAFLI
+                                                </span>
+                                            </button>
+
+                                            <!--Button -->                </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <!--Banner Slider
+                    </div>
+                    
+                        <!--./MainBanner-->
+                        <div class="ServiceBlock">
+                            <div class="bg-m-white">
+                                <div class="container">
+                                    <div class="position-relative z-index-2" style="margin-top: calc(-140px / 2);">
+                                        <!-- ServiceItems -->
+
+
+                                        <div id="ServiceItems">
+                                            <div class="ServiceItems__content">
+
+                                                <div class="row" class="flex-1">
+                                                    <div class="col-md-4">
+                                                        <div class="ServiceItem--mod d-flex flex-column h-145 bg-white text-center w-100">
+                                                            <div class="flex-1 d-flex align-items-center justify-content-center">
+                                                                <div class="Block">
+
+                                                                    <img src="assets/img/icons/svgs/yukdasima.svg" width="75" alt="Yükdaşıma">
+                                                                    <div class="pt-2"></div>
+                                                                    <p class="mb-0 text-blue font-mp-bold">Yükdaşıma</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="divider-h-5 bg-green"></div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="ServiceItem--mod d-flex flex-column h-145 bg-white text-center w-100">
+                                                            <div class="flex-1 d-flex align-items-center justify-content-center">
+                                                                <div class="Block">
+
+                                                                    <img src="assets/img/icons/svgs/Evakuasiya.svg" width="75" alt="Evakuasiya">
+                                                                    <div class="pt-2"></div>
+                                                                    <p class="mb-0 text-blue font-mp-bold">Evakuasiya</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="divider-h-5 bg-green"></div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="ServiceItem--mod d-flex flex-column h-145 bg-white text-center w-100">
+                                                            <div class="flex-1 d-flex align-items-center justify-content-center">
+                                                                <div class="Block">
+
+                                                                    <img src="assets/img/icons/svgs/anbar_xidmeti.svg" width="75" alt="Anbar xidməti">
+                                                                    <div class="pt-2"></div>
+                                                                    <p class="mb-0 text-blue font-mp-bold">Anbar xidməti</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="divider-h-5 bg-green"></div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="py-10"></div>
+
+                                                <div class="row" class="flex-1">
+                                                    <div class="col-md-4">
+                                                        <div class="ServiceItem--mod d-flex flex-column h-145 bg-white text-center w-100">
+                                                            <div class="flex-1 d-flex align-items-center justify-content-center">
+                                                                <div class="Block">
+
+                                                                    <img src="assets/img/icons/svgs/cleaner.svg" width="75" alt="Təmizlik xidməti">
+                                                                    <div class="pt-2"></div>
+                                                                    <p class="mb-0 text-blue font-mp-bold">Təmizlik xidməti</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="divider-h-5 bg-green"></div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="ServiceItem--mod d-flex flex-column h-145 bg-white text-center w-100">
+                                                            <div class="flex-1 d-flex align-items-center justify-content-center">
+                                                                <div class="Block">
+
+                                                                    <img src="assets/img/icons/svgs/email.svg" width="75" alt="Yükdaşıma">
+                                                                    <div class="pt-2"></div>
+                                                                    <p class="mb-0 text-blue font-mp-bold">Poçt xidməti</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="divider-h-5 bg-green"></div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="ServiceItem--mod d-flex flex-column h-145 bg-white text-center w-100">
+                                                            <div class="flex-1 d-flex align-items-center justify-content-center">
+                                                                <div class="Block">
+
+                                                                    <img src="assets/img/icons/svgs/chauffeur.svg" width="75" alt="Evakuasiya">
+                                                                    <div class="pt-2"></div>
+                                                                    <p class="mb-0 text-blue font-mp-bold">Ayıq sürücü</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="divider-h-5 bg-green"></div>
+
+                                                        </div>
+                                                    </div>
+                                                    <!--                                                    <div class="col-md-3">
+                                                                                                            <div class="ServiceItem--mod d-flex flex-column h-145 bg-white text-center w-100">
+                                                                                                                <div class="flex-1 d-flex align-items-center justify-content-center">
+                                                                                                                    <div class="Block">
+                                                    
+                                                                                                                        <img src="assets/img/icons/svgs/anbar_xidmeti.svg" width="75" alt="Anbar xidməti">
+                                                                                                                        <div class="pt-2"></div>
+                                                                                                                        <p class="mb-0 text-blue font-mp-bold">Anbar xidməti</p>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="divider-h-5 bg-green"></div>
+                                                    
+                                                                                                            </div>
+                                                                                                        </div>-->
+                                                    <!--                                                    <div class="col-md-3">
+                                                                                                            <div class="ServiceItem--mod d-flex flex-column h-145 bg-white text-center w-100">
+                                                                                                                <div class="flex-1 d-flex align-items-center justify-content-center">
+                                                                                                                    <div class="Block">
+                                                    
+                                                                                                                        <img src="assets/img/icons/svgs/cleaner.svg" width="75" alt="Təmizlik xidməti">
+                                                                                                                        <div class="pt-2"></div>
+                                                                                                                        <p class="mb-0 text-blue font-mp-bold">Təmizlik xidməti</p>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="divider-h-5 bg-green"></div>
+                                                    
+                                                                                                            </div>
+                                                                                                        </div>-->
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                        <!-- ./ServiceItems -->            </div>
+                                    <div class="py-15"></div>
+                                    <div class="py-1"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ServiceBlock">
+                            <div class="container">
+                                <div class="py-25"></div>
+                                <!-- ServiceCalculator -->
+
+                                <div id="ServiceCalculator">
+
+                                    <h2 class="text-gray font-40 font-mp-bold text-center">Yük kalkulyatoru</h2>
+                                    <div class="pt-15"></div>
+                                    <div id="ServiceCalculatorForm w-100">
+                                        <div class="row">
+                                            <div class="col-md-1"></div>
+                                            <div class="col-md-5">
+                                                <!-- Form Input -->
+
+                                                <div class="form-group ">
+
+                                                    <label class="font-16 font-mp text-gray" for="fromM__Input">HARADAN</label>
+
+                                                    <div class="CustomizeForm__inputCon">
+                                                        <input  type="" value="" class="form-control" id="fromM__Input" placeholder="">
+
+                                                        <div class="CustomizeForm__input__icon CustomizeForm__input__icon--right w-40p p-1 Show__pass c-point">
+                                                            <div class="w-100 h-100 d-flex align-items-center bg-white">
+                                                                <div class="d-flex justify-content-center w-100">
+                                                                    <img width="15" height="19" src="assets/img/icons/svgs/pin.svg?v=1" alt="pin">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <!-- Form Input -->            </div>
+                                            <div class="col-md-5">
+                                                <!-- Form Input -->
+
+                                                <div class="form-group ">
+
+                                                    <label class="font-16 font-mp text-gray" for="toM__Input">HARA</label>
+
+                                                    <div class="CustomizeForm__inputCon">
+                                                        <input  type="" value="" class="form-control" id="toM__Input" placeholder="">
+
+                                                        <div class="CustomizeForm__input__icon CustomizeForm__input__icon--right w-40p p-1 Show__pass c-point">
+                                                            <div class="w-100 h-100 d-flex align-items-center bg-white">
+                                                                <div class="d-flex justify-content-center w-100">
+                                                                    <img width="15" height="19" src="assets/img/icons/svgs/pin.svg?v=1" alt="pin">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <!-- Form Input -->            </div>
+                                            <div class="col-md-1"></div>
+                                        </div>
+                                        <div class="pt-1"></div>
+                                        <div class="d-flex justify-content-center w-100">
+                                            <div class="w-100 px-10 m-w-160p">
+                                                <!-- Form Input --> 
+                                                <div class="form-group CustomizeForm__inputCon ">
+                                                    <label class="font-16 font-mp text-gray text-nowrap" for="weightF__Input">YÜKÜN ÇƏKİSİ</label>
+                                                    <select class="form-control"  id="weightF__Input">
+                                                        <option selected value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                    </select>
+                                                </div>
+
+                                                <!-- Form Input -->
+                                            </div>
+                                            <div class="w-100 px-10 m-w-160p">
+                                                <!-- Form Input --> 
+                                                <div class="form-group CustomizeForm__inputCon ">
+                                                    <label class="font-16 font-mp text-gray text-nowrap" for="weightCF__Input">YÜKLƏRİN SAYI</label>
+                                                    <select class="form-control"  id="weightCF__Input">
+                                                        <option selected value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                    </select>
+                                                </div>
+
+                                                <!-- Form Input -->
+                                            </div>
+                                            <div class="w-100 px-10 m-w-160p">
+                                                <!-- Form Input --> 
+                                                <div class="form-group CustomizeForm__inputCon ">
+                                                    <label class="font-16 font-mp text-gray text-nowrap" for="workerC__Input">FƏHLƏ SAYI</label>
+                                                    <select class="form-control"  id="workerC__Input">
+                                                        <option selected value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                    </select>
+                                                </div>
+
+                                                <!-- Form Input -->
+                                            </div>
+                                        </div>
+                                        <div class="pt-10"></div>
+                                        <div class="d-flex justify-content-center w-100">
+                                            <div class="Block">
+                                                <div class="form-control m-w-250p border-bottom-0 text-center">
+                                                    <span id="MinPrice__f1" class="font-26 text-gray font-mp">55</span>
+                                                    <span id="MinPrice__f2" class="font-26 text-gray font-mp">-</span>
+                                                    <span id="MaxPrice__f3" class="font-26 text-gray font-mp">105</span>
+                                                    <span id="CurrencyType" class="font-26 text-gray font-mp">AZN</span>               
+                                                </div>
+                                                <div class="divider-h-3 bg-green"></div>
+                                            </div>
+                                        </div>
+                                        <div class="pt-15"></div>
+                                        <div class="d-flex justify-content-center w-100">
+                                            <!--Button -->
+                                            <button 
+                                                type="button"
+                                                class="btn btn-green py-10 px-25 h-45"
+
+                                                >
+                                                <span class=" font-mp-bold  font-16 text-white  ">
+                                                    TƏKLİF AL
+                                                </span>
+                                            </button>
+
+                                            <!--Button -->        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <!-- ./ServiceCalculator -->
+                            </div>
+                        </div>
+                        <div class="py-25"></div>
+                        <div class="container">
+                            
+                            <div class="divider-h-1 bg-light-gray"></div>
+                            <div class="divider-h-1 bg-light-gray"></div>
+                            
+                        </div>
+                        <div class="py-25"></div>
+                        <div class="container">
+                            <!-- WhyUs -->
+
+
+                            <div id="WhyUs">
+
+                                <h2 class="text-gray font-40 font-mp-bold text-center">Nə üçün bizi seçirlər?</h2>
+                                <div class="py-20"></div>
+                                <div class="row" class="flex-1">
+                                    <div class="col-md-3">
+                                        <div class="bg-white text-center w-100">
+                                            <div class="flex-1 d-flex align-items-center justify-content-center">
+                                                <div class="Block">
+
+                                                    <img src="assets/img/icons/svgs/serfeli_qiymet.svg?v=1" width="62" alt="Yükdaşıma">
+                                                    <div class="pt-2"></div>
+                                                    <p class="mb-0 text-gray font-mp-bold">Yükdaşıma</p>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="bg-white text-center w-100">
+                                            <div class="flex-1 d-flex align-items-center justify-content-center">
+                                                <div class="Block">
+
+                                                    <img src="assets/img/icons/svgs/vaxtinda_catdirma.svg?v=1" width="62" alt="Evakuasiya">
+                                                    <div class="pt-2"></div>
+                                                    <p class="mb-0 text-gray font-mp-bold">Evakuasiya</p>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="bg-white text-center w-100">
+                                            <div class="flex-1 d-flex align-items-center justify-content-center">
+                                                <div class="Block">
+
+                                                    <img src="assets/img/icons/svgs/24_7.svg?v=1" width="62" alt="Anbar xidməti">
+                                                    <div class="pt-2"></div>
+                                                    <p class="mb-0 text-gray font-mp-bold">Anbar xidməti</p>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="bg-white text-center w-100">
+                                            <div class="flex-1 d-flex align-items-center justify-content-center">
+                                                <div class="Block">
+
+                                                    <img src="assets/img/icons/svgs/cleaner.svg?v=1" width="62" height="62" alt="Təmizlik xidməti">
+                                                    <div class="pt-2"></div>
+                                                    <p class="mb-0 text-gray font-mp-bold">Təmizlik xidməti</p>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-25"></div>
+                                <div class="row" class="flex-1">
+                                    <div class="col-md-3">
+                                        <div class="bg-white text-center w-100">
+                                            <div class="flex-1 d-flex align-items-center justify-content-center">
+                                                <div class="Block">
+
+                                                    <img src="assets/img/icons/svgs/map.svg?v=1" width="62" height="62" alt="Yükdaşıma">
+                                                    <div class="pt-2"></div>
+                                                    <p class="mb-0 text-gray font-mp-bold">Ölkə üzrə xidmət</p>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="bg-white text-center w-100">
+                                            <div class="flex-1 d-flex align-items-center justify-content-center">
+                                                <div class="Block">
+
+                                                    <img src="assets/img/icons/svgs/xidmete_zemanet.svg?v=1" width="62" height="62" alt="Evakuasiya">
+                                                    <div class="pt-2"></div>
+                                                    <p class="mb-0 text-gray font-mp-bold">Xidmətə zəmanət</p>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="bg-white text-center w-100">
+                                            <div class="flex-1 d-flex align-items-center justify-content-center">
+                                                <div class="Block">
+
+                                                    <img src="assets/img/icons/svgs/rahat_odenis.svg?v=1" width="62" height="62" alt="Anbar xidməti">
+                                                    <div class="pt-2"></div>
+                                                    <p class="mb-0 text-gray font-mp-bold">Rahat ödəniş</p>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="bg-white text-center w-100">
+                                            <div class="flex-1 d-flex align-items-center justify-content-center">
+                                                <div class="Block">
+
+                                                    <img src="assets/img/icons/svgs/shexsi_qablasdirma.svg?v=1" width="62" height="62" alt="Təmizlik xidməti">
+                                                    <div class="pt-2"></div>
+                                                    <p class="mb-0 text-gray font-mp-bold">Şəxsi qablaşdırma</p>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <!-- ./WhyUs --></div>
+                        <div class="py-25"></div>
+                               <!-- Footer -->
+                <footer id="Footer">
+
+                    <div class="Footer__content bg-dark-gray w-100 footer-background">
+
+                        <div class="Header__content__f">
+                            <div class="container">
+                                <div class="py-25"></div>
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="d-flex w-100">
+
+                                            <ul class="list-s-none pl-0 mb-0">
+                                                <li class="mb-10">
+                                                    <h4>Site Map</h4>
+                                                </li>
+                                                <li class="mb-10">
+                                                    <a href="#" class="d-block font-mp underline-none text-white text-green-hover font-14">
+                                                        Qeydiyyat
+                                                    </a>
+                                                </li>
+                                                <li class="mb-10">
+                                                    <a href="#" class="d-block font-mp underline-none text-white text-green-hover font-14">
+                                                        Xidmətlər
+                                                    </a>
+                                                </li>
+                                                <li class="mb-10">
+                                                    <a href="#" class="d-block font-mp underline-none text-white text-green-hover font-14">
+                                                        Kampaniyalar
+                                                    </a>
+                                                </li>
+                                                <li class="mb-10">
+                                                    <a href="#" class="d-block font-mp underline-none text-white text-green-hover font-14">
+                                                        Karyera
+                                                    </a>
+                                                </li>
+                                                <li class="mb-10">
+                                                    <a href="#" class="d-block font-mp underline-none text-white text-green-hover font-14">
+                                                        Korprativ təklif
+                                                    </a>
+                                                </li>
+                                                <li class="mb-10">
+                                                    <a href="#" class="d-block font-mp underline-none text-white text-green-hover font-14">
+                                                        Sosial fəaliyyətimiz
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                            <div class="px-30"></div>
+                                            <ul class="list-s-none pl-0 mb-0">
+                                                <li class="mb-10">
+                                                    <h4>Location</h4>
+                                                </li>
+                                                <li class="mb-10">
+                                                    <a href="#" class="d-block font-mp underline-none text-white text-green-hover font-14">
+                                                        Baki şəh., Nəsimi ray
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                            <div class="px-30"></div>
+                                            <ul class="list-s-none pl-0 mb-0">
+                                                <li class="mb-10">
+                                                    <h4>Contact us</h4>
+                                                </li>
+                                                <li class="mb-10">
+                                                    <a href="#" class="d-block font-mp underline-none text-white text-green-hover font-14">
+                                                        (012) 188
+                                                    </a>
+                                                </li>
+                                                <li class="mb-10">
+                                                    <a href="#" class="d-block font-mp underline-none text-white text-green-hover font-14">
+                                                        (+994) 215 78 49
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-block font-mp underline-none text-white text-green-hover font-14">
+                                                        (+994) 215 79 17
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="px-30"></div>
+                                            <ul class="list-s-none pl-0 mb-0">
+                                                <li class="mb-10">
+                                                    <h4>About us</h4> 
+                                                </li>
+                                                <li class="mb-10">
+                                                    <a href="#" class="d-block font-mp underline-none text-white text-green-hover font-14">
+                                                        Privacy Policy
+                                                    </a>
+                                                </li>
+                                                <li class="mb-10">
+                                                    <a href="#" class="d-block font-mp underline-none text-white text-green-hover font-14">
+                                                        Terms Of Services
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-block font-mp underline-none text-white text-green-hover font-14">
+                                                        News And Events
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="d-flex flex-column align-items-end">
+                                            <!--<h3 class="text-white font-mp-bold font-22">Total free</h3>-->
+                                            <!--<h2 class="text-white font-mp font-40">0 888 188 188</h3>-->
+                                            <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Afiy%C9%99ddin%20C%C9%99lilov%20k%C3%BC%C3%A7%C9%99si%20102&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net">wordpress themes with rss feed</a></div><style>.mapouter{text-align:right;height:300px;width:400px;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:400px;}</style></div>
+<!--                                            <div>
+                                                <span class="text-white font-mp font-14">
+                                                    BİZİ İZLƏYİN
+                                                </span>
+                                                <span class="pl-10"></span>
+                                                <span>
+                                                    <img width="35" height="35" src="assets/img/icons/svgs/twitter.svg" alt="TW">
+                                                    <i class="pl-2"></i>
+                                                    <img width="35" height="35" src="assets/img/icons/svgs/instagram.svg" alt="IG">
+                                                    <i class="pl-2"></i>
+                                                    <img width="35" height="35" src="assets/img/icons/svgs/facebook.svg" alt="FB">
+                                                </span>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="py-25"></div>
+                            </div>
+                            <div class="container">
+                                <div class="divider-h-1 bg-gray"></div>
+                            </div>
+                            <div class="container">
+                                <div class="row py-15">
+                                    <div class="col-md-6">
+                                        <div class="Block">
+                                            <img src="assets/img/icons/svgs/azcargo-logo1.png?v=1" width="170" alt="LogoFooter">
+                                            <span class="pl-30"></span>
+                                            <span class="font-12 font-mp text-light-gray ">© 2018 AZCARGO 188. Bütün hüquqlar qorunur</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 d-flex align-items-center justify-content-end ">
+                                        <div class="Block">
+                                            <img src="assets/img/icons/svgs/MasterCard.svg?v=1" width="40" alt="MasterCard">
+                                            <span class="pl-15"></span>
+                                            <img src="assets/img/icons/svgs/Visa.svg?v=1" width="40" alt="Visa">
+                                            <span class="pl-15"></span>
+                                            <img src="assets/img/icons/svgs/PayPal.svg?v=1" width="36" alt="PayPal">
+                                            <span class="pl-15"></span>
+                                            <img src="assets/img/icons/svgs/AmericanExpress.svg?v=1" width="52" alt="AmericanExpress">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </footer>
+                <!-- /Footer --> 
+                    </div>
+                    <!-- /MAIN PAGE  -->
+
+                </main>
+
+
+                
+            </div>
+            <!-- Login Modal -->
+            <div class="modal CustomizeModals" id="LoginModalCenter">
+                <div class="modal-dialog modal-dialog-centered" role="document" style="max-width:395px">
+                    <div class="modal-content border-r-10">
+                        <!--Modal Header -->
+
+
+                        <div class="modal-header">
+                            <div class="w-100">
+                                <div class="ModalHeader--height">
+                                    <div class="py-20"></div>
+                                    <button type="button" class="ModalCloseBtn close float-right mr-25" data-dismiss="modal" aria-label="Close">
+                                        <img src="assets/img/icons/svgs/CloseButton.svg?v=1" alt="Close Button" width="16" height="16" >
+                                    </button>
+                                    <div class="pt-20"></div>
+                                </div>
+                                <div>
+                                    <h5 class="modal-title text-center font-30 text-gray font-mp-bold" id="TT">Daxil ol</h5>
+                                    <div class="pb-10"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Modal Header -->            <div class="modal-body px-60">
+                            <div class="pt-15"></div>
+                            <div class="modal-body">
+                                <form class="m-0">
+                                    <!-- Form Input -->
+
+                                    <div class="form-group ">
+
+                                        <label class="font-16 font-mp text-gray" for="Form__phone__Input">Telefon</label>
+
+                                        <div class="CustomizeForm__inputCon">
+                                            <input required type="text" value="" class="form-control" id="Form__phone__Input" placeholder="050 123 45 67">
+
+
+                                        </div>
+
+                                    </div>
+                                    <!-- Form Input -->                        <!-- Form Input -->
+
+                                    <div class="form-group ">
+
+                                        <label class="font-16 font-mp text-gray" for="Form__password__Input">Şifrə</label>
+
+                                        <div class="CustomizeForm__inputCon">
+                                            <input required type="password" value="" class="form-control" id="Form__password__Input" placeholder="">
+
+
+                                        </div>
+
+                                    </div>
+                                    <!-- Form Input -->                        <!--Button -->
+                                    <button 
+                                        type="button"
+                                        class="btn btn-green w-100 py-10 px-25 h-45"
+
+                                        >
+                                        <span class=" font-mp-bold  font-16 text-white  ">
+                                            DAXİL OL
+                                        </span>
+                                    </button>
+
+                                    <!--Button -->                        <div class="pt-10"></div>
+                                    <div class="text-center w-100">
+                                        <a href="forgot-password" class="underline-none">
+                                            <span class="font-14 text-gray">Şifrəni unutmusan?</span>
+                                        </a>
+                                    </div>
+                                    <div class="pt-15"></div>
+                                    <!--Button -->
+                                    <button 
+                                        type="button"
+                                        class="btn btn-outline-green w-100 py-10 px-25 h-45"
+
+                                        >
+                                        <span class=" font-mp-bold  font-16 text-green  ">
+                                            QEYDİYYAT
+                                        </span>
+                                    </button>
+
+                                    <!--Button -->                    </form>
+
+                            </div>
+                            <div class="py-30"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Login Modal -->        <!-- Register Modal -->
+            <div class="modal CustomizeModals" id="RegisterModalCenter">
+                <div class="modal-dialog modal-dialog-centered" role="document" style="max-width:575px">
+                    <div class="modal-content border-r-10">
+                        <!--Modal Header -->
+
+
+                        <div class="modal-header">
+                            <div class="w-100">
+                                <div class="ModalHeader--height">
+                                    <div class="py-20"></div>
+                                    <button type="button" class="ModalCloseBtn close float-right mr-25" data-dismiss="modal" aria-label="Close">
+                                        <img src="assets/img/icons/svgs/CloseButton.svg?v=1" alt="Close Button" width="16" height="16" >
+                                    </button>
+                                    <div class="pt-20"></div>
+                                </div>
+                                <div>
+                                    <h5 class="modal-title text-center font-30 text-gray font-mp-bold" id="TT">Qeydiyyat</h5>
+                                    <div class="pb-10"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Modal Header -->            <div class="modal-body px-30">
+                            <div class="pt-15"></div>
+                            <div class="modal-body">
+                                <form class="m-0">
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <!-- Form Input -->
+
+                                            <div class="form-group ">
+
+                                                <label class="font-16 font-mp text-gray" for="Form__fullname__Input">Ad və soyad</label>
+
+                                                <div class="CustomizeForm__inputCon">
+                                                    <input required type="text" value="" class="form-control" id="Form__fullname__Input" placeholder="Cavid Arazov">
+
+
+                                                </div>
+
+                                            </div>
+                                            <!-- Form Input -->                            </div>
+                                        <div class="col-md-6">
+                                            <!-- Form Input -->
+
+                                            <div class="form-group ">
+
+                                                <label class="font-16 font-mp text-gray" for="Form__email__Input">E-mail</label>
+
+                                                <div class="CustomizeForm__inputCon">
+                                                    <input required type="text" value="" class="form-control" id="Form__email__Input" placeholder="cavid@movex.az">
+
+
+                                                </div>
+
+                                            </div>
+                                            <!-- Form Input -->                            </div>
+                                        <div class="col-md-6">
+                                            <!-- Form Input -->
+
+                                            <div class="form-group ">
+
+                                                <label class="font-16 font-mp text-gray" for="Form__phone__Input">Telefon</label>
+
+                                                <div class="CustomizeForm__inputCon">
+                                                    <input required type="text" value="" class="form-control" id="Form__phone__Input" placeholder="0501234567">
+
+
+                                                </div>
+
+                                            </div>
+                                            <!-- Form Input -->                            </div>
+                                        <div class="col-md-6">
+                                            <!-- Form Input -->
+
+                                            <div class="form-group ">
+
+                                                <label class="font-16 font-mp text-gray" for="Form__password__Input">Şifrə</label>
+
+                                                <div class="CustomizeForm__inputCon">
+                                                    <input required type="password" value="" class="form-control" id="Form__password__Input" placeholder="">
+
+
+                                                </div>
+
+                                            </div>
+                                            <!-- Form Input -->                            </div>
+                                        <div class="col-md-6">
+                                            <!-- Form Input -->
+
+                                            <div class="form-group ">
+
+
+                                                <div class="CustomizeForm__inputCon">
+                                                    <input required type="text" value="" class="form-control" id="Form__reCAPTCHA__Input" placeholder="reCAPTCHA">
+
+
+                                                </div>
+
+                                            </div>
+                                            <!-- Form Input -->                            </div>
+                                        <div class="col-md-6">
+                                            <!--Button -->
+                                            <button 
+                                                type="button"
+                                                class="btn btn-green w-100 py-10 px-25 h-45"
+
+                                                >
+                                                <span class=" font-mp-bold  font-16 text-white  ">
+                                                    QEYDİYYAT
+                                                </span>
+                                            </button>
+
+                                            <!--Button -->                            </div>
+                                    </div>
+
+                                    <div class="text-center w-100">
+                                        <div>
+                                            <span class="font-14 text-gray">Qeydiyyatdan keçmisən?</span>
+                                        </div>
+                                    </div>
+                                    <div class="pt-15"></div>
+                                    <div class="d-flex w-100 justify-content-center">
+                                        <!--Button -->
+                                        <button 
+                                            type="button"
+                                            class="btn btn-outline-green w-100 m-w-250p m-auto py-10 px-25 h-45"
+
+                                            >
+                                            <span class=" font-mp-bold  font-16 text-green  ">
+                                                DAXİL OL
+                                            </span>
+                                        </button>
+
+                                        <!--Button -->                        </div>                        
+                                </form>
+
+                            </div>
+                            <div class="py-30"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Register Modal -->
+
+        </div>
+
+        <script  src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
+        <script  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+        <script  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+        <script  src="assets/js/build.js"></script>
+        <script>
+            $(function () {
+                $('.menu-img').on('click', function () {
+                    var type = $('.menu-div').attr('data-type');
+                    if (type == 'hide')
+                    {
+                        $('.menu-div').removeClass('hide-div');
+                        $('.menu-div').attr('data-type', 'show');
+                    }
+                    else
+                    {
+                        $('.menu-div').addClass('hide-div');
+                        $('.menu-div').attr('data-type', 'hide');
+                    }
+                })
+
+                $('.do-order').click(function (e) {
+                    var type = $(this).attr('data-type')
+                    if(type === 'show') {
+                        $(this).attr('data-type', 'hide');
+                        $("#order-modal").hide(400);
+                        return;
+                    }
+                    $(this).attr('data-type', 'show');
+                    $('.do-login').attr('data-type', 'hide');
+                    $('.do-payment').attr('data-type', 'hide');
+                    $("#payment-modal").hide(400);
+                    $("#login-modal").hide(400);
+                    $("#order-modal").show(500);
+
+
+                })
+
+                $("#btnCancel").click(function () {
+                    $("#order-modal").hide(400);
+                });
+
+                $('.do-payment').click(function (e) {
+                    var type = $(this).attr('data-type')
+                    if(type === 'show') {
+                        $(this).attr('data-type', 'hide');
+                        $("#payment-modal").hide(400);
+                        return;
+                    }
+                    $(this).attr('data-type', 'show');
+                    $('.do-login').attr('data-type', 'hide');
+                    $('.do-order').attr('data-type', 'hide');
+                    $("#order-modal").hide(400);
+                    $("#login-modal").hide(400);
+                    
+                    $("#payment-modal").show(500);
+
+                })
+
+                $('.do-login').click(function (e) {
+                    var type = $(this).attr('data-type')
+                    if(type === 'show') {
+                        $(this).attr('data-type', 'hide');
+                        $("#login-modal").hide(400);
+                        return;
+                    }
+                    $(this).attr('data-type', 'show');
+                    $('.do-order').attr('data-type', 'hide');
+                    $('.do-payment').attr('data-type', 'hide');
+                    $("#order-modal").hide(400);
+                    $("#payment-modal").hide(400);
+                    $("#login-modal").show(500);
+
+                })
+
+                $("#btnPaymentCancel").click(function () {
+                    $("#payment-modal").hide(400);
+                });
+
+                $("#btnLoginCancel").click(function () {
+                    $("#login-modal").hide(400);
+                });
+            })
+        </script>
+
+
+    </body>
+
+
+
+</html>
