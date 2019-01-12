@@ -32,6 +32,10 @@
     font-size: 12px;
     color: #2058A0;
 }
+.menu-item li a span.active{
+    
+    color: #2EC260 !important;
+}
 .menu-item{
     margin-top: 18px;
 }
@@ -191,7 +195,7 @@ span.active {
 
 .fixed-header {
     position: fixed;
-    background: #2EC260;
+    background: #2058A0;
     z-index: 10;
         height: 90px !important;
 }
@@ -199,22 +203,23 @@ span.active {
 .fixed-header .lang {
     border: 0px !important;
     color: white;
-    background-color: #2EC260;
+    background-color: #2058A0;
 }
 .fixed-header .menu-item-li-span {
     color: white !important;
 }
 .fixed-header .menu-item li a span {
-    color: white !important;
+    color: white ;
+}
+.fixed-header a span.active {
+    color:#2EC260 !important;
 }
 /*.fixed-header .menu-ul {
         position: absolute !important;
     margin-left: 26% !important;
     margin-top: -7% !important;
 }
-.fixed-header span.active {
-    color:#2058A0 !important;
-} 
+ 
 .fixed-header .main-lang {
     margin-top: 17px;
         
@@ -225,4 +230,8 @@ span.active {
 } */
 .z-index-3 {
     z-index: 3;
+}
+
+.cbp_tmlabel h2, .cbp_tmlabel p{
+    color:#555
 }
