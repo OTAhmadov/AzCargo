@@ -19,7 +19,8 @@
 }
 
 .main-lang li img {
-        cursor: pointer
+        cursor: pointer;
+            height: 15px;
 }
 
 .lang {
@@ -28,15 +29,25 @@
 }
 
 .menu-item li a span{
-    font-size: 15px;
+    font-size: 12px;
     color: #2058A0;
 }
-
+.menu-item{
+    margin-top: 18px;
+}
 .menu-item li span{
-    font-size: 15px;
+    font-size: 13px;
     color: #2058A0;
     cursor: pointer;
 }
+
+.menu-item-li-span {
+    font-size: 13px;
+    color: #2058A0;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
 .menu-item li span:hover{
     text-decoration: underline
 }
@@ -80,10 +91,13 @@
   background: #205895;
   position:absolute;
   display:none;
-  margin: 13px 0 0 -558px;
+  margin: 52px 0 0 -558px;
   width: 630px;
   z-index: 10;
 }
+
+
+
 .dialog label{
   display:inline-block;
   color:white;
@@ -108,38 +122,39 @@
     border: initial;
 }
 
-#btnOK, #btnPaymentOK, #btnLoginOK, #btnRegistrOK{
-      border: 1px solid #2EC2A6;
-    background: #2EC260;
-    margin: 5px;
-    width: 100px;
-    border-radius: 7px;
-    float: right;
+
+.btnOK, .btnPaymentOK, .btnLoginOK, .btnRegistrOK{
+      border: 1px solid #2EC2A6 !important;
+    background: #2EC260 !important;
+    margin: 5px !important;
+    width: 100px !important;
+    border-radius: 7px !important;
+    float: right !important;
 }
 
-#btnLoginRegister{
-     border: 1px solid #2EC2A6;
-    background: white;
-    margin: 5px;
-    width: 120px;
-    border-radius: 7px;
-    float: left;
+.btnLoginRegister{
+     border: 1px solid #2EC2A6 !important;
+    background: white !important;
+    margin: 5px !important;
+    width: 120px !important;
+    border-radius: 7px !important;
+    float: left !important;
 }
 
-#btnForgetpassword{
-    margin: 11px 0 0 20px;
-    width: 120px;
-    border-radius: 7px;
-    float: left;
+.btnForgetpassword{
+    margin: 11px 0 0 20px !important;
+    width: 120px !important;
+    border-radius: 7px !important; 
+    float: left !important;
 }
 
-#btnCancel, #btnPaymentCancel, #btnLoginCancel, #btnRegistrCancel{
-      border: 1px solid;
-    background: white;
-    margin: 5px;
-    width: 100px;
-    border-radius: 7px;
-    float: right;
+.btnCancel, .btnPaymentCancel, .btnLoginCancel, .btnRegistrCancel{
+      border: 1px solid !important;
+    background: white !important;
+    margin: 5px !important;
+    width: 100px !important;
+    border-radius: 7px !important;
+    float: right !important;
 }
 
 
@@ -173,3 +188,41 @@ span.active {
 /*ul.menu-ul li {
         width: 110px;
 }*/
+
+.fixed-header {
+    position: fixed;
+    background: #2EC260;
+    z-index: 10;
+        height: 90px !important;
+}
+
+.fixed-header .lang {
+    border: 0px !important;
+    color: white;
+    background-color: #2EC260;
+}
+.fixed-header .menu-item-li-span {
+    color: white !important;
+}
+.fixed-header .menu-item li a span {
+    color: white !important;
+}
+/*.fixed-header .menu-ul {
+        position: absolute !important;
+    margin-left: 26% !important;
+    margin-top: -7% !important;
+}
+.fixed-header span.active {
+    color:#2058A0 !important;
+} 
+.fixed-header .main-lang {
+    margin-top: 17px;
+        
+} 
+.fixed-header .contact-li {
+    width: 11px;
+
+} */
+.z-index-3 {
+    z-index: 3;
+}

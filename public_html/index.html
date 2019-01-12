@@ -27,21 +27,20 @@
 
             <div class="MainContent--flex">
                 <!-- Header -->
-                <header id="Header" class="Header--height position-absolute z-index-2 w-100">
+                <header id="Header" class="Header--height position-absolute z-index-3 w-100">
+                    <div class="Header__content  h-100p w-100 fixed-header" style="display: none">
 
-                    <div class="Header__content  h-100p w-100">
-
-                        <div class="container h-100">
+                         <div class="container h-100">
                             <div class="row align-items-center h-100">
                                 <div class="col-md-2 HeaderLeft--col logo-1">
                                     <!--<img src="assets/img/icons/svgs/azcargo-logo.png?v=1"  alt="movex" class="w-100 Max-logo-w" style="float: left"/>-->
-                                    <img src="./assets/img/icons/svgs/azcargo-logo.png?v=1"  alt="movex" class="w-100" />
+                                    <img src="./assets/img/icons/svgs/azcargo-logo1.png?v=2"  alt="movex" class="w-100" />
                                     <!--<img src="assets/img/icons/svgs/azcargo-logo.png?v=1"  alt="movex" class="w-100 Max-logo-w" />-->
                                     <!--<img src="assets/img/icons/svgs/mainLogo.svg?v=1"  alt="movex" class="w-100 Max-logo-w" />-->
                                 </div>
                                 <div class="col-md-2 HeaderLeft--col other-logo">
                                     <!--<img src="assets/img/icons/svgs/azcargo-logo.png?v=1"  alt="movex" class="w-100 Max-logo-w" style="float: left"/>-->
-                                    <img src="assets/img/icons/svgs/azcargo-call1.png?v=1"  alt="movex" class="w-100" />
+                                    <img src="assets/img/icons/svgs/azcargo-call.png?v=2"  alt="movex" class="w-100" />
                                     <!--<img src="assets/img/icons/svgs/azcargo-call1.png?v=1"  alt="movex" class="w-100 Max-logo-w" />-->
                                     <!--<img src="assets/img/icons/svgs/mainLogo.svg?v=1"  alt="movex" class="w-100 Max-logo-w" />-->
                                 </div>
@@ -60,22 +59,10 @@
                                                         <option>RU</option>
                                                     </select>
                                                 </li>
-<!--                                                <li class="pl-15 menu-img">
-                                                    Button 
-                                                    <img src="assets/img/icons/svgs/vector.svg?v=1"  alt="movex" class="w-100" />
-
-                                                    Button     
-                                                </li>-->
-
-                                            </ul>
-
-
-                                            <ul class="list-s-none d-flex align-items-center p-0 justify-content-end mb-15 menu-item">
-
                                                 <li class="pl-15">
                                                     <!--<a href="#" class="d-block" >-->
-                                                    <span class="font-mp-bold font-12 d-block do-order" data-type="hide">Sifariş et</span>
-                                                    <div class="dialog" id="order-modal">
+                                                    <span class="font-mp-bold font-12 d-block do-order menu-item-li-span" data-type="hide">Sifariş et</span>
+                                                    <div class="dialog order-modal" id="">
                                                         <form>
                                                             <div class="row">
                                                                 <div class="col-md-6">
@@ -171,22 +158,22 @@
                                                             </div>
 
                                                             <div align="center">
-                                                                <input type="button" value="Ok" id="btnOK">
+                                                                <input type="button" value="Ok" class="btnOK">
                                                             </div>
                                                             <div align="center">
-                                                                <input type="button" value="Bağla" id="btnCancel">
+                                                                <input type="button" value="Bağla" class="btnCancel">
                                                             </div>
                                                         </form>
                                                     </div>
                                                     <!--</a>-->
                                                 </li>
                                                 <li class="pl-15">
-                                                    <img src="assets/img/icons/svgs/line.svg?v=1"  alt="movex" class="w-100" />
+                                                    <img src="./assets/img/icons/svgs/line.svg?v=1"  alt="movex" class="w-100" />
                                                 </li>
                                                 <li class="pl-15">
                                                     <!--<a href="/" class="d-block">-->
-                                                    <span class="font-mp-bold font-12 d-block do-payment" data-type="hide">Ödəniş et</span>
-                                                    <div class="dialog" id="payment-modal">
+                                                    <span class="font-mp-bold font-12 d-block do-payment menu-item-li-span" data-type="hide">Ödəniş et</span>
+                                                    <div class="dialog payment-modal" id="payment-modal">
                                                         <form>
                                                             <div class="row">
                                                                 <div class="col-md-6">
@@ -238,22 +225,22 @@
                                                             </div>
 
                                                             <div align="center">
-                                                                <input type="button" value="Ok" id="btnPaymentOK">
+                                                                <input type="button" value="Ok" class="btnPaymentOK">
                                                             </div>
                                                             <div align="center">
-                                                                <input type="button" value="Bağla" id="btnPaymentCancel">
+                                                                <input type="button" value="Bağla" class="btnPaymentCancel">
                                                             </div>
                                                         </form>
                                                     </div>
                                                     <!--</a>-->
                                                 </li>
                                                 <li class="pl-15">
-                                                    <img src="assets/img/icons/svgs/line.svg?v=1"  alt="movex" class="w-100" />
+                                                    <img src="./assets/img/icons/svgs/line.svg?v=1"  alt="movex" class="w-100" />
                                                 </li>
                                                 <li class="pl-15">
                                                     <!--<a href="/" class="d-block">-->
-                                                    <span class="font-mp-bold font-12 d-block do-login" data-type="hide">Daxil ol</span>
-                                                    <div class="dialog" id="login-modal" >
+                                                    <span class="font-mp-bold font-12 d-block do-login menu-item-li-span" data-type="hide">Daxil ol</span>
+                                                    <div class="dialog login-modal" id="" >
                                                         <form>
                                                             <div class="row">
                                                                 <div class="col-md-6">
@@ -279,18 +266,18 @@
                                                             </div>
 
                                                             <div align="left">
-                                                                <input type="button" value="Qeydiyyat" id="btnLoginRegister" class="do-registr">
+                                                                <input type="button" value="Qeydiyyat" class="do-registr btnLoginRegister">
                                                             </div>
                                                             <div align="left">
-                                                                <a href="/" class="d-block underline-none text-green-hover" id="btnForgetpassword">
+                                                                <a href="/" class="d-block underline-none text-green-hover btnForgetpassword" id="">
                                                                         <i class="text-white font-mp-bold font-12">Şifrəni unutmusan?</i>
                                                                     </a>
                                                             </div>
                                                             <div align="center">
-                                                                <input type="button" value="Ok" id="btnLoginOK">
+                                                                <input type="button" value="Ok" class="btnLoginOK">
                                                             </div>
                                                             <div align="center">
-                                                                <input type="button" value="Bağla" id="btnLoginCancel">
+                                                                <input type="button" value="Bağla" class="btnLoginCancel">
                                                             </div>
                                                         </form>
                                                     </div>
@@ -356,31 +343,29 @@
                                                             </div>
 
                                                             <div align="center">
-                                                                <input type="button" value="Ok" id="btnRegistrOK">
+                                                                <input type="button" value="Ok" class="btnRegistrOK">
                                                             </div>
                                                             <div align="center">
-                                                                <input type="button" value="Bağla" id="btnRegistrCancel">
+                                                                <input type="button" value="Bağla" class="btnRegistrCancel">
                                                             </div>
                                                             
                                                         </form>
                                                     </div>
                                                     <!--</a>-->
                                                 </li>
+<!--                                                <li class="pl-15 menu-img">
+                                                    Button 
+                                                    <img src="assets/img/icons/svgs/vector.svg?v=1"  alt="movex" class="w-100" />
+
+                                                    Button     
+                                                </li>-->
 
                                             </ul>
 
 
-                                            <!-- /HeaderRightTop -->                        </div>
+                                            <ul class="list-s-none d-flex align-items-center p-0 justify-content-end menu-item">
 
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-12 HeaderRight--col h-100 py-15">
-                                    <div class="HeaderRight h-100">
-                                        <div class="HeaderRightTop">
-                                            <ul class="list-s-none d-flex  p-0 menu-ul" style="position: absolute; margin-left: 34%;">
-
-                                                <li style="width: 110px;">
+                                                <li style="width: 94px;">
                                                     <a href="/" class="d-block underline-none text-green-hover">
                                                         <span class="text-white font-mp-bold font-12 active">ƏSAS SƏHİFƏ</span>
                                                     </a>
@@ -407,7 +392,7 @@
                                                 </li>
                                                 <li class="pl-15">
                                                     <a href="/" class="d-block underline-none text-green-hover">
-                                                        <span class="text-white font-mp-bold font-12">KORPORATİV TƏKLİF</span>
+                                                        <span class="text-white font-mp-bold font-12">KORPORATİV</span>
                                                     </a>
                                                 </li>
                                                 <li class="pl-15">
@@ -417,9 +402,426 @@
                                                 </li>
                                                 <li class="pl-15">
                                                     <a href="/" class="d-block underline-none text-green-hover">
-                                                        <span class="text-white font-mp-bold font-12" style="margin-right: 100px">ƏLAQƏ</span>
+                                                        <span class="text-white font-mp-bold font-12" style="">ƏLAQƏ</span>
                                                     </a>
                                                 </li>
+
+                                            </ul>
+
+
+                                            <!-- /HeaderRightTop -->                        </div>
+
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-12 HeaderRight--col h-100 py-15">
+                                    <div class="HeaderRight h-100">
+                                        <div class="HeaderRightTop">
+                                            <ul class="list-s-none d-flex  p-0 menu-ul" style="position: absolute; margin-left: 34%;">
+
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="Header__content  h-100p w-100 normal-header">
+
+                        <div class="container h-100">
+                            <div class="row align-items-center h-100">
+                                <div class="col-md-2 HeaderLeft--col logo-1">
+                                    <!--<img src="assets/img/icons/svgs/azcargo-logo.png?v=1"  alt="movex" class="w-100 Max-logo-w" style="float: left"/>-->
+                                    <img src="./assets/img/icons/svgs/azcargo-logo.png?v=2"  alt="movex" class="w-100" />
+                                    <!--<img src="assets/img/icons/svgs/azcargo-logo.png?v=1"  alt="movex" class="w-100 Max-logo-w" />-->
+                                    <!--<img src="assets/img/icons/svgs/mainLogo.svg?v=1"  alt="movex" class="w-100 Max-logo-w" />-->
+                                </div>
+                                <div class="col-md-2 HeaderLeft--col other-logo">
+                                    <!--<img src="assets/img/icons/svgs/azcargo-logo.png?v=1"  alt="movex" class="w-100 Max-logo-w" style="float: left"/>-->
+                                    <img src="assets/img/icons/svgs/azcargo-call1.png?v=2"  alt="movex" class="w-100" />
+                                    <!--<img src="assets/img/icons/svgs/azcargo-call1.png?v=1"  alt="movex" class="w-100 Max-logo-w" />-->
+                                    <!--<img src="assets/img/icons/svgs/mainLogo.svg?v=1"  alt="movex" class="w-100 Max-logo-w" />-->
+                                </div>
+                                <div class="col-md-8 HeaderRight--col h-100 py-15">
+                                    <div class="HeaderRight h-100">
+                                        <div class="HeaderRightTop">
+                                            <!-- HeaderRightTop -->
+
+
+                                            <ul class="list-s-none d-flex align-items-center p-0 justify-content-end mb-15 main-lang">
+
+                                                <li class="pl-15">
+                                                    <select class="lang font-mp-bold">
+                                                        <option>AZ</option>
+                                                        <option>EN</option>
+                                                        <option>RU</option>
+                                                    </select>
+                                                </li>
+                                                <li class="pl-15">
+                                                    <!--<a href="#" class="d-block" >-->
+                                                    <span class="font-mp-bold font-12 d-block do-order menu-item-li-span" data-type="hide">Sifariş et</span>
+                                                    <div class="dialog order-modal" id="order-modal">
+                                                        <form>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Ad
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Soyad
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Telefon
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Email
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Sifariş tipi
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Ödəniş tipi
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Haradan
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Hara
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Qeyd
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <textarea type="text" id="name"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Şəkil
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="file" id="name">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div align="center">
+                                                                <input type="button" value="Ok" class="btnOK">
+                                                            </div>
+                                                            <div align="center">
+                                                                <input type="button" value="Bağla" class="btnCancel">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <!--</a>-->
+                                                </li>
+                                                <li class="pl-15">
+                                                    <img src="./assets/img/icons/svgs/line.svg?v=1"  alt="movex" class="w-100" />
+                                                </li>
+                                                <li class="pl-15">
+                                                    <!--<a href="/" class="d-block">-->
+                                                    <span class="font-mp-bold font-12 d-block do-payment menu-item-li-span" data-type="hide">Ödəniş et</span>
+                                                    <div class="dialog payment-modal" id="payment-modal">
+                                                        <form>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Sifariş nömrəsi
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Sifariş məbləği
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Nömrə
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Email
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Kartın növü
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div align="center">
+                                                                <input type="button" value="Ok" class="btnPaymentOK">
+                                                            </div>
+                                                            <div align="center">
+                                                                <input type="button" value="Bağla" class="btnPaymentCancel">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <!--</a>-->
+                                                </li>
+                                                <li class="pl-15">
+                                                    <img src="./assets/img/icons/svgs/line.svg?v=1"  alt="movex" class="w-100" />
+                                                </li>
+                                                <li class="pl-15">
+                                                    <!--<a href="/" class="d-block">-->
+                                                    <span class="font-mp-bold font-12 d-block do-login menu-item-li-span" data-type="hide">Daxil ol</span>
+                                                    <div class="dialog login-modal" id="login-modal" >
+                                                        <form>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Username
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Password
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="password" id="name">
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div align="left">
+                                                                <input type="button" value="Qeydiyyat" class="do-registr btnLoginRegister">
+                                                            </div>
+                                                            <div align="left">
+                                                                <a href="/" class="d-block underline-none text-green-hover btnForgetpassword">
+                                                                        <i class="text-white font-mp-bold font-12">Şifrəni unutmusan?</i>
+                                                                    </a>
+                                                            </div>
+                                                            <div align="center">
+                                                                <input type="button" value="Ok" class="btnLoginOK">
+                                                            </div>
+                                                            <div align="center">
+                                                                <input type="button" value="Bağla" class="btnLoginCancel">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="dialog registr-modal" id="registr-modal" >
+                                                        <form>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Ad
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="name">
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Soyad
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="surname">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Email
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="email">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Əlaqə nömrəsi
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="text" id="phone">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Şifrə
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="password" id="password">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label >
+                                                                        Təkrar şifrə
+                                                                    </label>
+                                                                    <div class="form-group">
+
+                                                                        <input type="password" id="confirmPassword">
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div align="center">
+                                                                <input type="button" value="Ok" class="btnRegistrOK">
+                                                            </div>
+                                                            <div align="center">
+                                                                <input type="button" value="Bağla" class="btnRegistrCancel">
+                                                            </div>
+                                                            
+                                                        </form>
+                                                    </div>
+                                                    <!--</a>-->
+                                                </li>
+<!--                                                <li class="pl-15 menu-img">
+                                                    Button 
+                                                    <img src="assets/img/icons/svgs/vector.svg?v=1"  alt="movex" class="w-100" />
+
+                                                    Button     
+                                                </li>-->
+
+                                            </ul>
+
+
+                                            <ul class="list-s-none d-flex align-items-center p-0 justify-content-end menu-item">
+
+                                                <li style="width: 94px;">
+                                                    <a href="/" class="d-block underline-none text-green-hover">
+                                                        <span class="text-white font-mp-bold font-12 active">ƏSAS SƏHİFƏ</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/" class="d-block underline-none text-green-hover">
+                                                        <span class="text-white font-mp-bold font-12">HAQQIMIZDA</span>
+                                                    </a>
+                                                </li>
+                                                <li class="pl-15">
+                                                    <a href="/" class="d-block underline-none text-green-hover">
+                                                        <span class="text-white font-mp-bold font-12">XİDMƏTLƏRİMİZ</span>
+                                                    </a>
+                                                </li>
+                                                <li class="pl-15">
+                                                    <a href="/" class="d-block underline-none text-green-hover">
+                                                        <span class="text-white font-mp-bold font-12">NAİLİYYƏTLƏRİMİZ</span>
+                                                    </a>
+                                                </li>
+                                                <li class="pl-15">
+                                                    <a href="promotion.html" class="d-block underline-none text-green-hover">
+                                                        <span class="text-white font-mp-bold font-12">KAMPANİYALAR</span>
+                                                    </a>
+                                                </li>
+                                                <li class="pl-15">
+                                                    <a href="/" class="d-block underline-none text-green-hover">
+                                                        <span class="text-white font-mp-bold font-12">KORPORATİV</span>
+                                                    </a>
+                                                </li>
+                                                <li class="pl-15">
+                                                    <a href="/" class="d-block underline-none text-green-hover">
+                                                        <span class="text-white font-mp-bold font-12">KARYERA</span>
+                                                    </a>
+                                                </li>
+                                                <li class="pl-15">
+                                                    <a href="/" class="d-block underline-none text-green-hover">
+                                                        <span class="text-white font-mp-bold font-12" style="">ƏLAQƏ</span>
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+
+
+                                            <!-- /HeaderRightTop -->                        </div>
+
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-12 HeaderRight--col h-100 py-15">
+                                    <div class="HeaderRight h-100">
+                                        <div class="HeaderRightTop">
+                                            <ul class="list-s-none d-flex  p-0 menu-ul" style="position: absolute; margin-left: 34%;">
+
+                                                
                                             </ul>
                                         </div>
                                     </div>
@@ -1363,93 +1765,206 @@
                     }
                 })
 
-                $('.do-order').click(function (e) {
+                $('.normal-header .do-order').click(function (e) {
+                    
                     var type = $(this).attr('data-type')
                     if(type === 'show') {
                         $(this).attr('data-type', 'hide');
-                        $("#order-modal").hide(400);
+                        $(".normal-header .order-modal").hide(400);
                         return;
                     }
                     $(this).attr('data-type', 'show');
-                    $('.do-login').attr('data-type', 'hide');
-                    $('.do-payment').attr('data-type', 'hide');
-                    $('.do-registr').attr('data-type', 'hide');
-                    $("#payment-modal").hide(400);
-                    $("#login-modal").hide(400);
-                    $("#registr-modal").hide(400);
-                    $("#order-modal").show(500);
+                    $('.normal-header .do-login').attr('data-type', 'hide');
+                    $('.normal-header .do-payment').attr('data-type', 'hide');
+                    $('.normal-header .do-registr').attr('data-type', 'hide');
+                    $(".normal-header .payment-modal").hide(400);
+                    $(".normal-header .login-modal").hide(400);
+                    $(".normal-header .registr-modal").hide(400);
+                    $(".normal-header .order-modal").show(500);
 
 
                 })
 
-                $("#btnCancel").click(function () {
-                    $("#order-modal").hide(400);
+                $(".normal-header .btnCancel").click(function () {
+                    $(".normal-header .order-modal").hide(400);
                 });
 
-                $('.do-payment').click(function (e) {
+                $('.normal-header .do-payment').click(function (e) {
                     var type = $(this).attr('data-type')
                     if(type === 'show') {
                         $(this).attr('data-type', 'hide');
-                        $("#payment-modal").hide(400);
+                        $(".normal-header .payment-modal").hide(400);
                         return;
                     }
                     $(this).attr('data-type', 'show');
-                    $('.do-login').attr('data-type', 'hide');
-                    $('.do-order').attr('data-type', 'hide');
-                    $('.do-registr').attr('data-type', 'hide');
-                    $("#order-modal").hide(400);
-                    $("#login-modal").hide(400);
-                    $("#registr-modal").hide(400);
-                    $("#payment-modal").show(500);
+                    $('.normal-header .do-login').attr('data-type', 'hide');
+                    $('.normal-header .do-order').attr('data-type', 'hide');
+                    $('.normal-header .do-registr').attr('data-type', 'hide');
+                    $(".normal-header .order-modal").hide(400);
+                    $(".normal-header .login-modal").hide(400);
+                    $(".normal-header .registr-modal").hide(400);
+                    $(".normal-header .payment-modal").show(500);
 
                 })
 
-                $('.do-login').click(function (e) {
+                $('.normal-header .do-login').click(function (e) {
                     var type = $(this).attr('data-type')
                     if(type === 'show') {
                         $(this).attr('data-type', 'hide');
-                        $("#login-modal").hide(400);
+                        $(".normal-header .login-modal").hide(400);
                         return;
                     }
                     $(this).attr('data-type', 'show');
-                    $('.do-order').attr('data-type', 'hide');
-                    $('.do-payment').attr('data-type', 'hide');
-                    $('.do-registr').attr('data-type', 'hide');
-                    $("#order-modal").hide(400);
-                    $("#payment-modal").hide(400);
-                    $("#registr-modal").hide(400);
-                    $("#login-modal").show(500);
+                    $('.normal-header .do-order').attr('data-type', 'hide');
+                    $('.normal-header .do-payment').attr('data-type', 'hide');
+                    $('.normal-header .do-registr').attr('data-type', 'hide');
+                    $(".normal-header .order-modal").hide(400);
+                    $(".normal-header .payment-modal").hide(400);
+                    $(".normal-header .registr-modal").hide(400);
+                    $(".normal-header .login-modal").show(500);
 
                 })
 
-                $("#btnPaymentCancel").click(function () {
-                    $("#payment-modal").hide(400);
+                $(".normal-header .btnPaymentCancel").click(function () {
+                    $(".normal-header .payment-modal").hide(400);
                 });
 
-                $("#btnLoginCancel").click(function () {
-                    $("#login-modal").hide(400);
+                $(".normal-header .btnLoginCancel").click(function () {
+                    $(".normal-header .login-modal").hide(400);
                 });
-                $("#btnRegistrCancel").click(function () {
-                    $("#registr-modal").hide(400);
+                $(".normal-header .btnRegistrCancel").click(function () {
+                    $(".normal-header .registr-modal").hide(400);
                 });
                 
-                $(".do-registr").click(function () {
+                $(".normal-header .do-registr").click(function () {
                     var type = $(this).attr('data-type')
                     if(type === 'show') {
                         $(this).attr('data-type', 'hide');
-                        $("#registr-modal").hide(400);
+                        $(".normal-header .registr-modal").hide(400);
                         return;
                     }
                     $(this).attr('data-type', 'show');
-                    $('.do-order').attr('data-type', 'hide');
-                    $('.do-payment').attr('data-type', 'hide');
-                    $('.do-login').attr('data-type', 'hide');
-                    $("#order-modal").hide(400);
-                    $("#payment-modal").hide(400);
-                    $("#login-modal").hide(400);
-                    $("#registr-modal").show(500);
+                    $('.normal-header .do-order').attr('data-type', 'hide');
+                    $('.normal-header .do-payment').attr('data-type', 'hide');
+                    $('.normal-header .do-login').attr('data-type', 'hide');
+                    $(".normal-header .order-modal").hide(400);
+                    $(".normal-header .payment-modal").hide(400);
+                    $(".normal-header .login-modal").hide(400);
+                    $(".normal-header .registr-modal").show(500);
                 });
+
+                $('.fixed-header .do-order').click(function (e) {
+                    
+                    var type = $(this).attr('data-type')
+                    if(type === 'show') {
+                        $(this).attr('data-type', 'hide');
+                        $(".fixed-header .order-modal").hide(400);
+                        return;
+                    }
+                    $(this).attr('data-type', 'show');
+                    $('.fixed-header .do-login').attr('data-type', 'hide');
+                    $('.fixed-header .do-payment').attr('data-type', 'hide');
+                    $('.fixed-header .do-registr').attr('data-type', 'hide');
+                    $(".fixed-header .payment-modal").hide(400);
+                    $(".fixed-header .login-modal").hide(400);
+                    $(".fixed-header .registr-modal").hide(400);
+                    $(".fixed-header .order-modal").show(500);
+
+
+                })
+
+                $(".fixed-header .btnCancel").click(function () {
+                    $(".fixed-header .order-modal").hide(400);
+                });
+
+                $('.fixed-header .do-payment').click(function (e) {
+                    var type = $(this).attr('data-type')
+                    if(type === 'show') {
+                        $(this).attr('data-type', 'hide');
+                        $(".fixed-header .payment-modal").hide(400);
+                        return;
+                    }
+                    $(this).attr('data-type', 'show');
+                    $('.fixed-header .do-login').attr('data-type', 'hide');
+                    $('.fixed-header .do-order').attr('data-type', 'hide');
+                    $('.fixed-header .do-registr').attr('data-type', 'hide');
+                    $(".fixed-header .order-modal").hide(400);
+                    $(".fixed-header .login-modal").hide(400);
+                    $(".fixed-header .registr-modal").hide(400);
+                    $(".fixed-header .payment-modal").show(500);
+
+                })
+
+                $('.fixed-header .do-login').click(function (e) {
+                    var type = $(this).attr('data-type')
+                    if(type === 'show') {
+                        $(this).attr('data-type', 'hide');
+                        $(".fixed-header .login-modal").hide(400);
+                        return;
+                    }
+                    $(this).attr('data-type', 'show');
+                    $('.fixed-header .do-order').attr('data-type', 'hide');
+                    $('.fixed-header .do-payment').attr('data-type', 'hide');
+                    $('.fixed-header .do-registr').attr('data-type', 'hide');
+                    $(".fixed-header .order-modal").hide(400);
+                    $(".fixed-header .payment-modal").hide(400);
+                    $(".fixed-header .registr-modal").hide(400);
+                    $(".fixed-header .login-modal").show(500);
+
+                })
+
+                $(".fixed-header .btnPaymentCancel").click(function () {
+                    $(".fixed-header .payment-modal").hide(400);
+                });
+
+                $(".fixed-header .btnLoginCancel").click(function () {
+                    $(".fixed-header .login-modal").hide(400);
+                });
+                $(".fixed-header .btnRegistrCancel").click(function () {
+                    $(".fixed-header .registr-modal").hide(400);
+                });
+                
+                $(".fixed-header .do-registr").click(function () {
+                    var type = $(this).attr('data-type')
+                    if(type === 'show') {
+                        $(this).attr('data-type', 'hide');
+                        $(".fixed-header .registr-modal").hide(400);
+                        return;
+                    }
+                    $(this).attr('data-type', 'show');
+                    $('.fixed-header .do-order').attr('data-type', 'hide');
+                    $('.fixed-header .do-payment').attr('data-type', 'hide');
+                    $('.fixed-header .do-login').attr('data-type', 'hide');
+                    $(".fixed-header .order-modal").hide(400);
+                    $(".fixed-header .payment-modal").hide(400);
+                    $(".fixed-header .login-modal").hide(400);
+                    $(".fixed-header .registr-modal").show(500);
+                });
+                
+                
+                
             })
+            
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                var scrollTop = $(window).scrollTop();
+               // now on the basis of scrollTop value show your div
+                 if(scrollTop > 100){
+                  $('.fixed-header').removeAttr('style')
+                    $('.normal-header .do-order').attr('data-type', 'hide');
+                    $('.normal-header .do-payment').attr('data-type', 'hide');
+                    $('.normal-header .do-login').attr('data-type', 'hide');
+                    $('.normal-header .do-registr').attr('data-type', 'hide');
+                    $(".normal-header .order-modal").hide(400);
+                    $(".normal-header .payment-modal").hide(400);
+                    $(".normal-header .login-modal").hide(400);
+                    $(".normal-header .registr-modal").hide(400);
+                 } else {
+                     $('.fixed-header').attr('style','display: none')
+                 }
+                 // and so on
+                })
+            })              
         </script>
 
 
