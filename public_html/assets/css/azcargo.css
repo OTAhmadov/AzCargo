@@ -235,3 +235,44 @@ span.active {
 .cbp_tmlabel h2, .cbp_tmlabel p{
     color:#555
 }
+
+.profile-body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 1000px;
+}
+
+.profile-body::-webkit-scrollbar-track
+{
+	/*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+	background-color: #F5F5F5;
+}
+
+.profile-body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.profile-body::-webkit-scrollbar-thumb
+{
+	background-color: #2058A0;
+	
+/*	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+	                   color-stop(.5, rgba(255, 255, 255, .2)),
+					   color-stop(.5, transparent), to(transparent));*/
+}
+
+.about-img img{
+    height: 400px;
+}
+
+.contact-div hr{
+    border-top: 2px solid #eee;
+}
+.more-information {
+    border-radius: 40px !important;
+}
+.vacancy-div {
+    margin-top: 1px;
+}
