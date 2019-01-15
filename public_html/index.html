@@ -12,6 +12,18 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
         <link rel="stylesheet" href="./assets/css/build.min.css">
         <link rel="stylesheet" href="./assets/css/azcargo.css">
+        <link rel="stylesheet" href="./assets/css/shortcode_timeline2.css">
+        <link rel="stylesheet" href="./assets/css/profile.css">
+        <link rel="stylesheet" href="./assets/css/app.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/blocks.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/plugins.css">
+        <link rel="stylesheet" href="./assets/css/ie8.css">
+        <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./assets/css/plugins/style-switcher.css">
+        <link rel="stylesheet" href="./assets/css/plugins/owl.carousel.css">
+        
         <style>
             html, body {
                 font-family: 'Roboto', sans-serif;
@@ -151,8 +163,8 @@
                                                     </div>
                                                     <!--</a>-->
                                                 </li>
-                                                <li class="pl-15">
-                                                    <img src="./assets/img/icons/svgs/line.svg?v=1"  alt="movex" class="w-100" />
+                                                <li class="pl-15"><span style="color: white">|</span>
+                                                    <!--<img src="./assets/img/icons/svgs/line.svg?v=1"  alt="movex" class="w-100" />-->
                                                 </li>
                                                 <li class="pl-15">
                                                     <!--<a href="/" class="d-block">-->
@@ -219,7 +231,8 @@
                                                     <!--</a>-->
                                                 </li>
                                                 <li class="pl-15">
-                                                    <img src="./assets/img/icons/svgs/line.svg?v=1"  alt="movex" class="w-100" />
+                                                    <span style="color: white">|</span>
+                                                    <!--<img src="./assets/img/icons/svgs/line.svg?v=1"  alt="movex" class="w-100" />-->
                                                 </li>
                                                 <li class="pl-15">
                                                     <!--<a href="/" class="d-block">-->
@@ -360,7 +373,7 @@
                                                     </a>
                                                 </li>
                                                 <li class="pl-15">
-                                                    <a href="/" class="d-block underline-none text-green-hover">
+                                                    <a href="service.html" class="d-block underline-none text-green-hover">
                                                         <span class="text-white font-mp-bold font-12">XİDMƏTLƏRİMİZ</span>
                                                     </a>
                                                 </li>
@@ -375,7 +388,7 @@
                                                     </a>
                                                 </li>
                                                 <li class="pl-15">
-                                                    <a href="/" class="d-block underline-none text-green-hover">
+                                                    <a href="corporative.html" class="d-block underline-none text-green-hover">
                                                         <span class="text-white font-mp-bold font-12">KORPORATİV</span>
                                                     </a>
                                                 </li>
@@ -538,7 +551,8 @@
                                                     <!--</a>-->
                                                 </li>
                                                 <li class="pl-15">
-                                                    <img src="./assets/img/icons/svgs/line.svg?v=1"  alt="movex" class="w-100" />
+                                                    <span style="color: #2058A0">|</span>
+                                                    <!--<img src="./assets/img/icons/svgs/line.svg?v=1"  alt="movex" class="w-100" />-->
                                                 </li>
                                                 <li class="pl-15">
                                                     <!--<a href="/" class="d-block">-->
@@ -604,8 +618,8 @@
                                                     </div>
                                                     <!--</a>-->
                                                 </li>
-                                                <li class="pl-15">
-                                                    <img src="./assets/img/icons/svgs/line.svg?v=1"  alt="movex" class="w-100" />
+                                                <li class="pl-15"><span style="color: #2058A0">|</span>
+                                                    <!--<img src="./assets/img/icons/svgs/line.svg?v=1"  alt="movex" class="w-100" />-->
                                                 </li>
                                                 <li class="pl-15">
                                                     <!--<a href="/" class="d-block">-->
@@ -746,7 +760,7 @@
                                                     </a>
                                                 </li>
                                                 <li class="pl-15">
-                                                    <a href="/" class="d-block underline-none text-green-hover">
+                                                    <a href="service.html" class="d-block underline-none text-green-hover">
                                                         <span class="text-white font-mp-bold font-12">XİDMƏTLƏRİMİZ</span>
                                                     </a>
                                                 </li>
@@ -761,7 +775,7 @@
                                                     </a>
                                                 </li>
                                                 <li class="pl-15">
-                                                    <a href="/" class="d-block underline-none text-green-hover">
+                                                    <a href="corporative.html" class="d-block underline-none text-green-hover">
                                                         <span class="text-white font-mp-bold font-12">KORPORATİV</span>
                                                     </a>
                                                 </li>
@@ -1918,7 +1932,8 @@
                 var scrollTop = $(window).scrollTop();
                // now on the basis of scrollTop value show your div
                  if(scrollTop > 100){
-                  $('.fixed-header').removeAttr('style')
+                  $('.fixed-header').show(500);
+//                  $('.fixed-header').removeAttr('style')
                     $('.normal-header .do-order').attr('data-type', 'hide');
                     $('.normal-header .do-payment').attr('data-type', 'hide');
                     $('.normal-header .do-login').attr('data-type', 'hide');
@@ -1928,7 +1943,8 @@
                     $(".normal-header .login-modal").hide(400);
                     $(".normal-header .registr-modal").hide(400);
                  } else {
-                     $('.fixed-header').attr('style','display: none')
+//                     $('.fixed-header').attr('style','display: none')
+$('.fixed-header').hide(500);
                  }
                  // and so on
                 })
